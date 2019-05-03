@@ -1,0 +1,10 @@
+# Reboot after upgrading packages requiring it
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = linux
+Target = systemd
+Target = systemd-libs
+[Action]
+When = PostTransaction
+Exec = /usr/bin/shutdown --reboot +10

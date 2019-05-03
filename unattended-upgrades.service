@@ -1,0 +1,10 @@
+[Unit]
+Description=Unattended upgrades
+
+# TODO receive email if failure
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/pacman -Syu --noconfirm
+
+[Install]
+WantedBy=multi-user.target
