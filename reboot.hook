@@ -5,6 +5,8 @@ Type = Package
 Target = linux*
 Target = systemd
 Target = systemd-libs
+
 [Action]
+Description = Scheduling reboot in 10 minutes...
 When = PostTransaction
 Exec = /usr/bin/shutdown --reboot +10
