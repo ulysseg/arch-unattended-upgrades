@@ -2,7 +2,7 @@
 [Trigger]
 Operation = Upgrade
 Type = Package
-Target = linux
+Target = linux*
 Target = systemd
 Target = systemd-libs
 [Action]
